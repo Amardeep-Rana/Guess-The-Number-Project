@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="chances instruct closebtn">Chances: <span></span></div> 
+    <div class="instruct closebtn">#HowToPlay</div>
+    <div class="mainText"><h1 class="title">Guess The Number</h1></div>
+    <form id="aForm" onsubmit="return false;">
+        <input type="number" id="userInput">
+        <div class="checkBtn" onclick="inputToVar()">OK</div>
+    </form>
+    <div class="startBtn">start</div>
+    <div class="startbtn">
+        
+    </div>
+    <div id="instruction">
+        <span>#Rules</span>
+        <span>#1. Press the 'start' button to start the game.</span>
+        <span>#2. Computer will generate a 'Random Number' between 1-100.</span>
+        <span>#3. Your task is to Guess that Number taking minimum chances.</span>
+        <span>#4. Game will help you by telling you if your number is SMALLER or BIGGER compared to 'Random Number'.</span>
+        <span>#5. If SMALLER , try bigger number.</span>
+        <span>#6. If BIGGER , try smaller number.</span>
+        <div class="closebtn">Close</div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
